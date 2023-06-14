@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Find from "./Find";
 import NewState from "./NewState";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <button onClick={addNumber}>new number</button>
 
     <NewState/>
+    <Find/>
     </div>
   );
 }

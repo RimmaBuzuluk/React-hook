@@ -16,7 +16,7 @@ function addName(){
         setInputValue('')
     }
 }
-
+console.log(name)
   return (
     
     <div className="input">
