@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Find from "./Find";
 import NewState from "./NewState";
+import MobX from "./MobX";
 
 function App() {
   const [numbers, setNumbers] = useState([]);
@@ -21,6 +22,7 @@ function App() {
 
     <NewState/>
     <Find/>
+    <MobX/>
     </div>
   );
 }
