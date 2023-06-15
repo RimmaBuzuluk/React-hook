@@ -8,7 +8,7 @@ function MobX() {
   return (
     <div>
       <Counter/>
-      <Counter2/>
+      {/* <Counter2/> */}
 
     </div>
   );

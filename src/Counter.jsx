@@ -1,19 +1,27 @@
 import React from "react";
-import counter from "./store/counter";
 import { observer } from "mobx-react-lite";
+import counter from "./store/counter";
 
-const Counter=observer(()=> {
+const Counter = observer(() => {
+  const handleIncrement = () => {
+    counter.increment();
+  };
 
+  const handleDecrement = () => {
+    counter.decrement();
+  };
 
   return (
     <div className="counter">
-        {"counter="+counter.count}
-        <div>
-            <button onClick={()=>counter.increment}>+</button>
-            <button onClick={()=>counter.decrement}>-</button>
-        </div>
+      {"counter=" + counter.count}
+      <div>
+        <button onClick={handleIncrement}>+</button>
+        <button onClick={handleDecrement}>-</button>
+      </div>
     </div>
   );
-})
+});
+
+
 
 export default Counter;
