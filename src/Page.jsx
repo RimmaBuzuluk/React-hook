@@ -5,20 +5,19 @@ import MobX from "./MobX";
 import PersonList from "./PersonList";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ListRandomNumber from "./ListRandomNumber";
-import Page from "./Page";
-import CardPerson from "./CardPerson";
 
-function App() {
+function Page() {
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Page />} />
-        <Route path="/person/:id" element={<CardPerson />} />
-       
-      </Routes>
-    </Router>
+        <div>
+            <ListRandomNumber/>
+            <NewState/>
+            <Find/>
+            <MobX/>
+            <PersonList/> 
+         </div>
+
   );
 }
 
-export default App;
+export default Page;
