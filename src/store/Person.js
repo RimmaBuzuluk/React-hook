@@ -11,10 +11,22 @@ class Person{
             description:"John`s description"
         },
         {
-            id:1, 
+            id:2, 
             name:"Tom",
             photo:"johne.jps",
             description:"Tom`s description"
+        },
+        {
+            id:3, 
+            name:"Ron",
+            photo:"johne.jps",
+            description:"Ron`s description"
+        },
+        {
+            id:4, 
+            name:"Bob",
+            photo:"johne.jps",
+            description:"Bob`s description"
         }
     ];
 
