@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 
 const PersonItem=({person})=> {
 
-    // const handleClick=()=>{
-    //   Person.selectedPerson(person.id)
-    // }
+
 
   return (
     <Link to={`/person/${person.id}`}>

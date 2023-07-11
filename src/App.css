@@ -41,3 +41,22 @@
 .input{
   margin-top: 100px;
 }
+
+.butAPI{
+  width: 400PX;
+  height: 150px;
+  margin-bottom: 200px;
+}
+
+.userBlock {
+  width: 150px;
+  height: 150px;
+  background-color: bisque;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
