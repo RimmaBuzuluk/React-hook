@@ -45,7 +45,7 @@
 .butAPI{
   width: 400PX;
   height: 150px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 
 .userBlock {
@@ -59,4 +59,20 @@
 .container {
   display: flex;
   justify-content: center;
+}
+
+/* //////////editing////////// */
+
+.Edition{
+  margin-bottom: 50px;
+}
+
+.Item{
+  display: flex;
+  margin: 10px 10px 10px 10px;
+  
+}
+
+.ItemDelBut{
+  margin-left: 10px;
 }

@@ -6,6 +6,7 @@ import PersonList from "./PersonList";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ListRandomNumber from "./ListRandomNumber";
 import ButtAPI from "./ButtAPI";
+import Editing from "./Editing";
 
 function Page() {
 
@@ -17,6 +18,7 @@ function Page() {
             <MobX/>
             <PersonList/> 
             <ButtAPI/>
+            <Editing/>
          </div>
 
   );

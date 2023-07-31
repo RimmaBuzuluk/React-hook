@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Page />} />
         <Route path="/person/:id" element={<CardPerson />} />
-        <Route path="/api" element={<APIPage/>}/>  
+        <Route path="/api" element={<APIPage/>}/>   
       </Routes>
     </Router>
   );
