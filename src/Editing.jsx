@@ -8,18 +8,26 @@ import { useState } from "react";
 
 const Editing=()=> {
     const wish=wishItems.wish
-
     const [newItem, setNewItem]=useState("")
+    const [wishes, setWishes] = useState(wishItems.wish);
 
-    const handleAdd=()=>{
-        if(newItem.trim() !==""){
-            wishItems.addWishItem({
-                id: wishItems.wish.length+1,
-                name:newItem,
-            });
-            setNewItem('')
+
+    const handleAdd = () => {
+        if (newItem.trim() !== "") {
+          const newWish = {
+            id: Math.random(),
+            name: newItem,
+          };
+          wishItems.addWishItem(newWish);
+          setWishes([...wishes, newWish]);
+          setNewItem("");
         }
-    }
+      };
+
+      const handleDelete = (id) => {
+        wishItems.removeWishItem(id);
+        setWishes(wishes.filter((wish) => wish.id !== id));
+      };
 
   return (
     <div className="Edition" >
@@ -30,7 +38,7 @@ const Editing=()=> {
         </div>
         <div className="WishList">
             {wish.map((wish)=>(
-                <WishItem key={wish.id} wish={wish}/>
+                <WishItem key={wish.id} wish={wish} onDelete={handleDelete}/>
             ))}
         </div>
     </div>

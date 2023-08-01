@@ -31,9 +31,9 @@ class WishItems{
         this.wish.push(newItem)
     }
 
-    removeWishItem(index){
-        this.wish.splice(index, 1)
-    }
+    removeWishItem(id) {
+        this.wish = this.wish.filter((item) => item.id !== id);
+      }
 }
 
 export default new WishItems();

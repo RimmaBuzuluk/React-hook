@@ -7,7 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
-    "mobx": "^6.9.0",
+    "mobx": "^6.10.0",
     "mobx-react": "^7.6.0",
     "mobx-react-lite": "^3.4.3",
     "mobx-utils": "^6.0.6",
