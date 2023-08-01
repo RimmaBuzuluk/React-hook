@@ -7,7 +7,7 @@ function APIPage() {
     useEffect(()=>{
         axios.get("https://social-network.samuraijs.com/api/1.0/users").then(response=>{
             setUsers(response.data.items)
-            console.log(response)
+            // console.log(response)
         })
         
         // .catch(error=>{console.error(error)})

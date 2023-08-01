@@ -19,7 +19,7 @@ function Find() {
     item.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
-  console.log(filteredData);
+  // console.log(filteredData);
 
   return (
     <div className="input">

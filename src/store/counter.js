@@ -8,11 +8,11 @@ class Counter{
 
     increment(){
         this.count=this.count+1
-        console.log(this.count)
+        // console.log(this.count)
     }
     decrement(){
         this.count=this.count-1
-        console.log(this.count)
+        // console.log(this.count)
     }
 
 }

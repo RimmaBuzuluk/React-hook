@@ -17,12 +17,12 @@ class CounterStore {
   
     increment() {
       this.count++;
-      console.log(this.count)
+      // console.log(this.count)
     }
   
     decrement() {
       this.count--;
-      console.log(this.count)
+      // console.log(this.count)
     }
   }
   

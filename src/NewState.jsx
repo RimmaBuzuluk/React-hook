@@ -8,7 +8,7 @@ const [inputValue, setInputValue] = useState('');
 
 function RName(evetn){
     setInputValue(evetn.target.value)
-    console.log(inputValue)
+    // console.log(inputValue)
 }
 function addName(){
     if(inputValue.trim() !==""){
@@ -16,7 +16,7 @@ function addName(){
         setInputValue('')
     }
 }
-console.log(name)
+// console.log(name)
   return (
     
     <div className="input">
